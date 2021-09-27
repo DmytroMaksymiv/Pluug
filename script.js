@@ -1,6 +1,6 @@
 'use strict';
 
-document.querySelector('h1').style.color ='red';
+document.querySelector('h1').style.color = 'red';
 
 // infinite cycle
 
@@ -11,8 +11,18 @@ document.querySelector('h1').style.color ='red';
 
 // UpperCase and LowerCase
 
-let str = 'Test'
-const str2 = str.split('').map(word=>word===word.toLowerCase() ? word.toUpperCase() : 
-word.toLowerCase()).join('')
+let str = 'Test';
+const str2 = str
+  .split('')
+  .map(word =>
+    word === word.toLowerCase() ? word.toUpperCase() : word.toLowerCase()
+  )
+  .join('');
 
-console.log(str2)
+console.log(str2);
+
+/*     
+    Завдання 1 зроблено добре. Браузер зависає.
+
+    Завдання 2 зроблено добре. 
+*/
